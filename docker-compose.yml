@@ -5,8 +5,14 @@ services:
         context: ./mysql
         dockerfile: Dockerfile
     image: mysql:5.7
+    container_name: haitiano
+    command: --bind-address=0.0.0.0
     environment:
       MYSQL_ROOT_PASSWORD: 2170721
       MYSQL_DATABASE: estudiantessql
       MYSQL_USER: Brauny
       MYSQL_PASSWORD: 2170721
+    ports:
+      - "3306:3306"
+
+ 
