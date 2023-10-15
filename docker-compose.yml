@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  mysql:
+    build: 
+        context: ./mysql
+        dockerfile: Dockerfile
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 2170721
+      MYSQL_DATABASE: estudiantessql
+      MYSQL_USER: Brauny
+      MYSQL_PASSWORD: 2170721
